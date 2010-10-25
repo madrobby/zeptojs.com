@@ -1,0 +1,174 @@
+html,body {
+  width:100%;
+  height:100%;
+  background:#d7d9dc;
+  color:#333;
+  font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  line-height:18px;
+  background: -webkit-gradient(radial, 25% 10%, 0, 25% 10%, 500, from(rgb(72,74,75)), to(rgb(35,35,35))) no-repeat;
+}
+
+h1 {
+  color:#5840ae;
+  font-size:11px;
+  font-weight:bold;
+  text-transform:uppercase;
+  text-align:right;
+}
+
+p {
+  margin-bottom:1em;
+}
+
+a {  -webkit-transition-property: border-color, color, opacity; -webkit-transition-duration: 0.5s; }
+
+
+#container {
+  position:relative;
+  width:320px;
+  margin:0 auto;
+  padding:0 0 20px 0;
+  -webkit-box-reflect:below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.75, transparent), to(rgba(255,255,255,0.05)));
+}
+
+#logo {
+  position:relative;
+  top:10px;
+  right:0px;
+  width:100%;
+  height:70px;
+  text-indent:-5000px;
+  background:transparent url(../images/zeptojs-aerogelweight.png) no-repeat center right;
+}
+
+#beta {
+  position:absolute;
+  top:-2px;
+  left:-1px;
+  width:68px;
+  height:41px;
+  background:transparent url(../images/beta-stripe.png) no-repeat;
+}
+
+#main_content {
+  position:relative;
+  top:20px;
+  min-height:100px;
+  padding:15px 30px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  background:#f7f9fa url(../images/box-bg.png) no-repeat bottom center;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  border-radius:7px;
+  -webkit-box-shadow:0px 2px 3px rgba(0,0,0,0.35);
+  -moz-box-shadow:0px 2px 3px rgba(0,0,0,0.35);
+  box-shadow:0px 2px 3px rgba(0,0,0,0.35);
+}
+
+#main_content .github {
+  width:45%;
+  cursor:pointer;
+}
+
+#main_content .github a {
+  display:block;
+  width:65px;
+  height:34px;
+  margin:5px 0;
+  text-indent:-5000px;
+  background:transparent url(../images/github.png) no-repeat;
+  opacity:0.75;
+}
+
+#main_content .github h1 {
+  text-align:left;
+}
+
+#main_content .download {
+  float:right;
+  width:50%;
+  text-align:right;
+  cursor:pointer;
+}
+
+#main_content .download p {
+  width:80px;
+  padding-top:6px;
+  font-size:11px;
+  line-height:13px;
+  padding-right:40px;
+}
+
+#main_content .download a {
+  display:block;
+  position:relative;
+  float:right;
+  width:38px;
+  height:38px;
+  margin:5px 0;
+  text-indent:-500px;
+  line-height:1000px;
+  background:transparent url(../images/package.png) no-repeat center right;
+  opacity:0.75;
+  overflow:hidden;
+}
+
+#main_content .github a:hover,
+#main_content .download a:hover {
+  opacity:1.0;
+}
+
+
+
+#supported_platforms {
+  margin:30px 10px 0 0;
+  float:right;
+  width:110px;
+  height:40px;
+  color:#65686a;
+  font-size:10px;
+  text-align:right;
+  text-shadow:0px 1px 0px #222;
+  line-height:60px;
+  background:transparent url(../images/supported-platforms.png) no-repeat top right;
+  clear:both;
+}
+
+#navigation {
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  width:979px;
+  height:40px;
+  border:1px solid rgba(78,76,235,1);  
+  overflow:hidden;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  border-radius:7px;
+  -webkit-background-clip:border-box;
+}
+
+#navigation li {
+  float:left;
+  width:244px;
+  height:40px;
+  color:#fff;
+  font-family:"HelveticaNeue-Bold";
+  line-height:230%;
+  text-align:center;
+  text-shadow:rgba(0,0,0,0.25);
+  background: -webkit-gradient(linear, left top, left bottom, 
+    color-stop(0.0,   rgb(126,122,241)), 
+    /* color-stop(0.499, rgb(232,232,232)), */
+    /* color-stop(0.500, rgb(222,222,222)), */
+    color-stop(1,     rgb(95,92,238)) );
+  border-left:1px solid rgba(78,76,235,1);  
+  -webkit-background-clip:border-box;
+}
+
+#navigation li:first-child {
+  border-left:none;
+  -webkit-background-clip:border-box;
+}
