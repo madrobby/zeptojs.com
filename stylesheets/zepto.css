@@ -134,6 +134,7 @@ a {  -webkit-transition-property: border-color, color, opacity; -webkit-transiti
   line-height:60px;
   background:transparent url(../images/supported-platforms.png) no-repeat top right;
   clear:both;
+  overflow:hidden;
 }
 
 #navigation {
