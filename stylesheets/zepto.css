@@ -1,12 +1,13 @@
 html,body {
-  width:100%;
-  height:100%;
-  background:#d7d9dc;
   color:#333;
   font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;
   font-size:12px;
   line-height:18px;
-  background: -webkit-gradient(radial, 25% 10%, 0, 25% 10%, 500, from(rgb(72,74,75)), to(rgb(35,35,35))) no-repeat;
+  margin: 0;
+}
+
+html,body{
+background: -webkit-gradient(radial, 25% 10%, 0, 25% 10%, 300, from(rgb(72,74,75)), to(rgb(35,35,35))) no-repeat rgb(35,35,35);
 }
 
 h1 {
@@ -23,13 +24,16 @@ p {
 
 a {  -webkit-transition-property: border-color, color, opacity; -webkit-transition-duration: 0.5s; }
 
+a {
+  color: #000;
+}
 
 #container {
   position:relative;
   width:320px;
   margin:0 auto;
   padding:0 0 20px 0;
-  -webkit-box-reflect:below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.75, transparent), to(rgba(255,255,255,0.05)));
+  -webkit-box-reflect:below -134px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.65, transparent), to(rgba(255,255,255,0.15)));
 }
 
 #logo {
