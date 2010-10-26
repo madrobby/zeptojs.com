@@ -34,6 +34,9 @@ a {
   width:320px;
   margin:0 auto;
   padding:0 0 20px 0;
+}
+
+#container.ios {
   -webkit-box-reflect:below -134px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.65, transparent), to(rgba(255,255,255,0.15)));
 }
 
