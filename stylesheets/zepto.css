@@ -48,6 +48,23 @@ a {
   background:transparent url(../images/zeptojs-aerogelweight-big.png) no-repeat center right;
 }
 
+@-webkit-keyframes pulse {
+0% { opacity: 0 }
+100% { opacity: 100 }
+}
+
+#pulse {
+  position:absolute;
+  top:14px;
+  right:1px;
+  width:36px;
+  height:37px;
+  background-size: 80%;
+  opacity:0;
+  -webkit-animation: pulse 1s infinite alternate ease-in-out;
+  background:transparent url(../images/logo-big.png) no-repeat center right;
+}
+
 #beta {
   position:absolute;
   top:-2px;

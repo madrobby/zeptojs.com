@@ -3,6 +3,10 @@
   background:transparent url(../images/zeptojs-aerogelweight.png) no-repeat center right;
 }
 
+#pulse {
+  display: none;
+}
+
 #beta {
   background-size: auto;
   background:transparent url(../images/beta-stripe.png) no-repeat;
