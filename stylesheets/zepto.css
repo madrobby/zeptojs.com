@@ -36,7 +36,7 @@ a {
   padding:0 0 20px 0;
 }
 
-#container.ios {
+body.ios #container {
   -webkit-box-reflect:below -134px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.65, transparent), to(rgba(255,255,255,0.15)));
 }
 
@@ -64,8 +64,11 @@ a {
   height:37px;
   background-size: 80%;
   opacity:0;
-  -webkit-animation: pulse 1s infinite alternate ease-in-out;
   background:transparent url(../images/logo-big.png) no-repeat center right;
+}
+
+body.ios #pulse {
+  -webkit-animation: pulse 1s infinite alternate ease-in-out;
 }
 
 #beta {
