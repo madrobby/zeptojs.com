@@ -7,6 +7,7 @@ html,body {
 }
 
 html,body{
+background: rgb(35,35,35);
 background: -webkit-gradient(radial, 25% 10%, 0, 25% 10%, 300, from(rgb(72,74,75)), to(rgb(35,35,35))) no-repeat rgb(35,35,35);
 }
 
@@ -43,7 +44,8 @@ a {
   width:100%;
   height:70px;
   text-indent:-5000px;
-  background:transparent url(../images/zeptojs-aerogelweight.png) no-repeat center right;
+  background-size: 50%;
+  background:transparent url(../images/zeptojs-aerogelweight-big.png) no-repeat center right;
 }
 
 #beta {
@@ -52,7 +54,8 @@ a {
   left:-1px;
   width:68px;
   height:41px;
-  background:transparent url(../images/beta-stripe.png) no-repeat;
+  background-size: 100%;
+  background:transparent url(../images/beta-stripe-big.png) no-repeat;
 }
 
 #main_content {
@@ -62,7 +65,8 @@ a {
   padding:15px 30px;
   border-top:1px solid rgba(255,255,255,0.1);
   border-bottom:1px solid rgba(255,255,255,0.1);
-  background:#f7f9fa url(../images/box-bg.png) no-repeat bottom center;
+  background-size:100%;
+  background:#f7f9fa url(../images/box-bg-big.png) no-repeat bottom center;
   -webkit-border-radius:7px;
   -moz-border-radius:7px;
   border-radius:7px;
@@ -82,7 +86,8 @@ a {
   height:34px;
   margin:5px 0;
   text-indent:-5000px;
-  background:transparent url(../images/github.png) no-repeat;
+  background-size: 100%;
+  background:transparent url(../images/github-big.png) no-repeat;
   opacity:0.75;
 }
 
@@ -114,7 +119,8 @@ a {
   margin:5px 0;
   text-indent:-500px;
   line-height:1000px;
-  background:transparent url(../images/package.png) no-repeat center right;
+  background-size:100%;
+  background:transparent url(../images/package-big.png) no-repeat center right;
   opacity:0.75;
   overflow:hidden;
 }
@@ -136,7 +142,8 @@ a {
   text-align:right;
   text-shadow:0px 1px 0px #222;
   line-height:60px;
-  background:transparent url(../images/supported-platforms.png) no-repeat top right;
+  background-size: 100%;
+  background:transparent url(../images/supported-platforms-big.png) no-repeat top right;
   clear:both;
   overflow:hidden;
 }
