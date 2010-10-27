@@ -7,8 +7,6 @@
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <link href="stylesheets/reset.css" media="screen" rel="stylesheet" />
     <link href="stylesheets/zepto.css" media="screen" rel="stylesheet" />
-    <link rel="stylesheet" media="only screen and (min-device-width: 768px)" href="stylesheets/ipad.css" type="text/css" />
-    
     <meta name="viewport" content="width=device-width; initial-scale=0.9"/>
   </head>
   <body>
@@ -18,24 +16,28 @@
       <div id="main_content">        
         <div id="beta"></div>
         
-        <h1>About</h1>
+        <h1>&nbsp;</h1>
         
         <p>
-          Zepto.js is a minimalist inlinable framework for mobile WebKit browsers, with a jQuery-like chaining syntax.
+          <b>Zepto.js is a minimalist JavaScript framework for 
+          mobile WebKit browsers, with a jQuery-compatible syntax.</b>
         </p>
         
         <p>
-          Our goal: a ~2k library that handles most basic drudge work for you in a nice API 
-          so you can concentrate on getting stuff done.
+          The goal: a <b>2k library</b> that handles most basic drudge work 
+          with a nice API so you can <b>concentrate on getting stuff done</b>.
         </p>
         
+        <p>
+          Zepto.js is currently in early beta, and you can help to make it
+          awesome by <b>contributing code, documentation and demos</b>.
+        </p>
+                
         <p>
           Follow our progress on Twitter <a href="http://twitter.com/zeptojs">@zeptojs</a>.
-          Zepto.js is released under the <a href="http://github.com/madrobby/zepto/blob/master/MIT-LICENSE">MIT license</a>.
         </p>
         
-        <div class="downloads">
-          
+        <div class="downloads">          
           <div class="download" onclick="location.href='http://github.com/downloads/madrobby/zepto/zepto-0.1.zip'">
             <h1>Download v0.1</h1>
             <a href="http://github.com/downloads/madrobby/zepto/zepto-0.1.zip">download package</a>
@@ -47,9 +49,13 @@
           <div class="github" onclick="location.href='http://github.com/madrobby/zepto'">
             <h1>Source &amp; Docs</h1>
             <a href="http://github.com/madrobby/zepto">github</a>
-          </div>
-          
+          </div>          
         </div>
+        
+        <p class="license">
+        Zepto.js is released under the <a href="http://github.com/madrobby/zepto/blob/master/MIT-LICENSE">MIT license</a>.
+        </p>
+        
       </div>
       
       <div id="supported_platforms">
@@ -58,13 +64,19 @@
       </div>
       
       <div style="clear:both"></div>
-      
+            
     </div>
+    
+    <div style="text-align:center;opacity:0.7;margin-top:0px">
+    <a href='https://developer.mozilla.org/en/JavaScript' title='JavaScript API'><img src='http://static.jsconf.us/promotejsh.gif' height='75' width='90' alt='JavaScript API'/></a>
+    </div>
+    
     
     <script src="javascripts/zepto.min.js"></script>
     <script>
-      if(/Apple.*Mobile/.test(navigator.userAgent) &&
-        !(/Android/.test(navigator.userAgent))) $('body').addClass('ios');
+      if($.os.ios) $('body').addClass('ios');
+      if(!$.os.ios && !$.os.webos && !$.os.android) $('body').addClass('desktop');
+      if($.os.ipad) $('body').addClass('ipad');
     </script>
     
     <script src="http://static.getclicky.com/js" type="text/javascript"></script>

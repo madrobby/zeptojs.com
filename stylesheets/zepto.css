@@ -19,8 +19,18 @@ h1 {
   text-align:right;
 }
 
+body.desktop h1 {
+  font-size: 19px;
+}
+
 p {
   margin-bottom:1em;
+}
+
+p.license {
+  clear: both;
+  font-size: 80%;
+  color: rgb(80,80,80);
 }
 
 a {  -webkit-transition-property: border-color, color, opacity; -webkit-transition-duration: 0.5s; }
@@ -40,6 +50,11 @@ body.ios #container {
   -webkit-box-reflect:below -134px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.65, transparent), to(rgba(255,255,255,0.15)));
 }
 
+body.desktop #container {
+  width: 640px;
+}
+
+
 #logo {
   position:relative;
   top:10px;
@@ -49,6 +64,11 @@ body.ios #container {
   text-indent:-5000px;
   background-size: 50%;
   background:transparent url(../images/zeptojs-aerogelweight-big.png) no-repeat center right;
+}
+
+body.desktop #logo {
+  background-size: auto;
+  height: 140px;
 }
 
 @-webkit-keyframes pulse {
@@ -67,8 +87,16 @@ body.ios #container {
   background:transparent url(../images/logo-big.png) no-repeat center right;
 }
 
-body.ios #pulse {
+body.desktop #pulse, body.ios #pulse {
   -webkit-animation: pulse 1s infinite alternate ease-in-out;
+}
+
+body.desktop #pulse {
+  top: 13px;
+  right: 0px;
+  width: 72px;
+  height: 73px;
+  background-size: 100%;
 }
 
 #beta {
@@ -79,6 +107,11 @@ body.ios #pulse {
   height:41px;
   background-size: 100%;
   background:transparent url(../images/beta-stripe-big.png) no-repeat;
+}
+
+body.desktop #beta {
+  width:136px;
+  height:82px;
 }
 
 #main_content {
@@ -98,6 +131,13 @@ body.ios #pulse {
   box-shadow:0px 2px 3px rgba(0,0,0,0.35);
 }
 
+body.desktop #main_content {
+  font-size: 22px;
+  line-height: 32px;
+  background-size: 200%;
+  padding:30px 60px;
+}
+
 #main_content .github {
   width:45%;
   cursor:pointer;
@@ -114,11 +154,23 @@ body.ios #pulse {
   opacity:0.75;
 }
 
+body.desktop #main_content .github a {
+  width: 110px;
+  height: 68px;
+}
+
 #main_content .github h1 {
   text-align:left;
 }
 
 #main_content .download {
+  float:right;
+  width:50%;
+  text-align:right;
+  cursor:pointer;
+}
+
+body.desktop #main_content .download {
   float:right;
   width:50%;
   text-align:right;
@@ -131,6 +183,14 @@ body.ios #pulse {
   font-size:11px;
   line-height:13px;
   padding-right:40px;
+}
+
+body.desktop #main_content .download p {
+  padding-top: 12px;
+  width: 160px;
+  font-size: 20px;
+  line-height: 26px;
+  padding-right: 80px;
 }
 
 #main_content .download a {
@@ -146,6 +206,11 @@ body.ios #pulse {
   background:transparent url(../images/package-big.png) no-repeat center right;
   opacity:0.75;
   overflow:hidden;
+}
+
+body.desktop #main_content .download a {
+  width: 76px;
+  height: 76px;
 }
 
 #main_content .github a:hover,
@@ -169,6 +234,14 @@ body.ios #pulse {
   background:transparent url(../images/supported-platforms-big.png) no-repeat top right;
   clear:both;
   overflow:hidden;
+}
+
+body.desktop #supported_platforms {
+  margin:60px 20px 0 0;
+  width: 220px;
+  height: 80px;
+  line-height: 120px;
+  font-size: 16px;
 }
 
 #navigation {
@@ -206,4 +279,38 @@ body.ios #pulse {
 #navigation li:first-child {
   border-left:none;
   -webkit-background-clip:border-box;
+}
+
+body.ipad #logo {
+  background-size: auto;
+  background:transparent url(../images/zeptojs-aerogelweight.png) no-repeat center right;
+}
+
+body.ipad #pulse {
+  display: none;
+}
+
+body.ipad #beta {
+  background-size: auto;
+  background:transparent url(../images/beta-stripe.png) no-repeat;
+}
+
+body.ipad #main_content {
+  background-size:auto;
+  background:#f7f9fa url(../images/box-bg.png) no-repeat bottom center;
+}
+
+body.ipad #main_content .github a {
+  background-size: auto;
+  background:transparent url(../images/github.png) no-repeat;
+}
+
+body.ipad #main_content .download a {
+  background-size:auto;
+  background:transparent url(../images/package.png) no-repeat center right;
+}
+
+body.ipad #supported_platforms {
+  background-size: auto;
+  background:transparent url(../images/supported-platforms.png) no-repeat top right;
 }
