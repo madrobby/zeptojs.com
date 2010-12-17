@@ -314,3 +314,8 @@ body.ipad #supported_platforms {
   background-size: auto;
   background:transparent url(../images/supported-platforms.png) no-repeat top right;
 }
+
+em {
+  background: #ffc;
+  padding: 0 3px;
+}
