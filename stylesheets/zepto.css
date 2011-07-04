@@ -218,7 +218,13 @@ body.desktop #main_content .download a {
   opacity:1.0;
 }
 
+#twitter {
+  position:absolute;left:10px;top:15px;
+}
 
+body.desktop #twitter {
+  position:absolute;left:20px;top:80px;
+}
 
 #supported_platforms {
   margin:30px 10px 0 0;
