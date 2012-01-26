@@ -149,7 +149,7 @@ body.desktop #main_content {
   height:34px;
   margin:5px 0;
   text-indent:-5000px;
-  background-size: 100%;
+  background-size: contain;
   background:transparent url(../images/github-big.png) no-repeat;
   opacity:0.75;
 }
